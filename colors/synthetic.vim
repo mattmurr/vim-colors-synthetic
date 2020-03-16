@@ -50,6 +50,7 @@ let s:error      = { "fg": s:white, "bg": s:red }
 let s:cursor     = { "fg": s:black, "bg": s:white }
 let s:highlight  = { "fg": s:silver, "bg": s:onyx }
 let s:select     = { "bg": s:jet }
+let s:visual     = { "bg": s:onyx, "cterm": "reverse" }
 let s:none       = {}
 
 " basic syntax highlighting declarations
@@ -63,7 +64,7 @@ call s:h("Comment", s:subtle)
 call s:h("Normal", s:normal)
 call s:h("Italic", s:italic)
 call s:h("Bold", s:bold)
-call s:h("Visual", s:select)
+call s:h("Visual", s:visual)
 call s:h("Cursor", s:cursor)
 call s:h("CursorLine", s:select)
 call s:h("CursorLineNr", s:highlight)
